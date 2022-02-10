@@ -1,0 +1,15 @@
+.home {
+  &__wrapper {
+    .sidenav {
+      width: 18%;
+    }
+
+    .main {
+      width: 60%;
+    }
+
+    .right {
+      width: 22%;
+    }
+  }
+}
