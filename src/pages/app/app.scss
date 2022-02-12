@@ -1,7 +1,31 @@
 .home {
   &__wrapper {
     .sidenav {
-      width: 18%;
+      width: 15%;
+      font-size: 13px;
+      position: relative;
+      max-width: 100%;
+
+      &__playTitleBtn {
+        background: linear-gradient(to bottom, #126631, #022e12);
+        border-radius: 50px;
+        font-size: 12.5px;
+        padding-top: 7px;
+        padding-bottom: 6px;
+      }
+
+      &__playlistsTitle {
+        font-size: 12px;
+        letter-spacing: 0px;
+        color: #524f4f;
+        font-weight: bold;
+      }
+
+      .divider {
+        background: #2b2b2b;
+        height: 1px;
+        border-radius: 0.7px;
+      }
     }
 
     .main {
@@ -9,7 +33,7 @@
     }
 
     .right {
-      width: 22%;
+      width: 25%;
     }
   }
 }
