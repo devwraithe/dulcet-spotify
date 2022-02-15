@@ -1,39 +1,174 @@
-.home {
-  &__wrapper {
-    .sidenav {
-      width: 15%;
-      font-size: 13px;
-      position: relative;
-      max-width: 100%;
+// imports
+$light: #ffffff;
+@mixin svgStyle {
+  .svg {
+    width: 20px;
+    height: 20px;
 
-      &__playTitleBtn {
-        background: linear-gradient(to bottom, #126631, #022e12);
-        border-radius: 50px;
-        font-size: 12.5px;
-        padding-top: 7px;
-        padding-bottom: 6px;
+    path {
+      fill: #afafaf;
+    }
+  }
+}
+
+@mixin svgActive {
+  .svg--active {
+    path {
+      fill: #ffffff;
+    }
+  }
+}
+
+.home {
+  .wrapper {
+    .main {
+      width: 60%;
+      background-color: #126631;
+
+      .header {
+        align-items: center;
+        background: url(../../assets/cover.jpg) #000000 50% 50% no-repeat local;
+        background-size: cover;
+
+        .wrapper {
+          background-color: rgba($color: #000000, $alpha: 0.2);
+
+          .title {
+            font-size: 12.5px;
+            letter-spacing: 0.7px;
+            font-weight: bold;
+          }
+
+          .username {
+            margin-top: -15px;
+            font-size: 5.5rem;
+            font-weight: 900;
+            letter-spacing: -3.5px;
+            margin-left: -6px;
+          }
+
+          .more {
+            font-size: 15px;
+            letter-spacing: 0.3px;
+            font-weight: normal;
+            margin-top: -18px;
+          }
+        }
       }
 
-      &__playlistsTitle {
-        font-size: 12px;
-        letter-spacing: 0px;
-        color: #524f4f;
+      .board {
+        background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.3),
+          #000000
+        );
+        font-size: 14px;
+
+        &__header,
+        &__tabs {
+          align-items: center;
+          color: #b1aeae;
+        }
+
+        &__tab--active {
+          background-color: #ffffff1a;
+          color: #ffffff;
+          border-radius: 4.5px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+
+        &__filters {
+          @include svgStyle;
+          @include svgActive;
+        }
+
+        &__cardImg {
+          width: 10em;
+          height: 10em;
+          object-fit: cover;
+          border-radius: 4px;
+        }
+
+        &__cardTitle {
+          font-size: 0.95rem;
+          font-weight: 500;
+          margin-left: -2px;
+          letter-spacing: 0.2px;
+        }
+
+        &__cardMore {
+          font-size: 13px;
+          margin-top: 2.5px;
+          margin-left: -1.8px;
+        }
+      }
+    }
+
+    .playlist {
+      width: 23%;
+      background-color: #000000;
+
+      &__header {
+        background: url(../../assets/coverI.jpg) #000000 50% 50% no-repeat local;
+        background-size: cover;
+      }
+
+      &__headerWrap {
+        background-color: rgba($color: #000000, $alpha: 0.5);
+        padding-bottom: 2.4em;
+      }
+
+      &__headerPlayBtn {
+        background-color: rgba($color: #126631, $alpha: 0.85);
+        border-radius: 50px;
+        width: 3.5em;
+        height: 3.5em;
+        align-items: center;
+
+        svg {
+          margin-left: 2.5px;
+          margin-top: 1px;
+        }
+      }
+
+      &__headerTitle {
+        font-size: 2.15em;
+        margin-left: -1px;
+        letter-spacing: -0.5px;
+        font-weight: 900;
+        margin-top: -3px;
+      }
+
+      &__headerArtistes {
+        font-size: 14px;
+        margin-top: -5px;
+      }
+
+      &__heading {
+        font-size: 12.5px;
+        letter-spacing: -0.25px;
+        color: #353535;
         font-weight: bold;
       }
 
-      .divider {
-        background: #2b2b2b;
-        height: 1px;
-        border-radius: 0.7px;
+      &__track {
+        font-size: 13px;
+        align-items: center;
       }
-    }
 
-    .main {
-      width: 60%;
-    }
+      &__trackImg {
+        width: 3.4em;
+        height: 3.4em;
+        object-fit: cover;
+        border-radius: 50px;
+      }
 
-    .right {
-      width: 25%;
+      &__trackMore {
+        font-size: 12px;
+        color: #ffffff;
+        align-items: center;
+      }
     }
   }
 }

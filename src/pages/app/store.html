@@ -1,0 +1,45 @@
+<div className="main__dash mt-9 px-8 py-8">
+  
+  <div className="main__dashToday mt-10">
+    <p className="main__dashTodayTitle">Today</p>
+    <div className="main__dashTodayItems mt-4">
+      <div className="main__card">
+        {/* image */}
+        <img src="{songCoverI}" alt="" className="main__cardImg" />
+        {/* title */}
+        <div className="main__cardTitle mt-3">Matters</div>
+        {/* type - artiste */}
+        <div className="main__cardMore flex flex-row">
+          <div className="main__cardType">Single</div>
+          <span className="px-2">&#903;</span>
+          <div className="main__cardArtiste">Methyl Ethel</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {/* for yesterday */}
+  <div className="main__dashToday mt-12">
+    <p className="main__dashTodayTitle">For Yesterday</p>
+    <div className="main__dashTodayItems mt-4">
+      <div className="main__card">
+        {/* image */}
+        <img src="{songCoverII}" alt="" className="main__cardImg" />
+        {/* title */}
+        <div className="main__cardTitle mt-3">Starbucks</div>
+        {/* type - artiste */}
+        <div className="main__cardMore flex flex-row">
+          <div className="main__cardType">Album</div>
+          <span className="px-2">&#903;</span>
+          <div className="main__cardArtiste">Hiraishin</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+============================= &__dash { color: #ffffff; background-image:
+linear-gradient( to bottom, rgba(0, 0, 0, 0.3), #000000 ); font-size: 14px; }
+&__dashTabs { color: #b1aeae; } &__dashActiveTab { background-color: #ffffff1a;
+color: #ffffff; border-radius: 5px; } &__dashTodayTitle { color: #b1aeae; }
+&__cardImg { width: 10em; height: 10em; object-fit: cover; border-radius: 5px; }
+&__cardTitle { font-size: 0.95rem; font-weight: bold; } &__cardMore { font-size:
+13px; color: #585858; margin-top: 1px; font-weight: 500; }

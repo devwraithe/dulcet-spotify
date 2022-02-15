@@ -1,0 +1,19 @@
+// mixins
+@mixin svgStyle {
+  .svg {
+    width: 21px;
+    height: 21px;
+
+    path {
+      fill: #afafaf;
+    }
+  }
+}
+
+@mixin svgActive {
+  .svg {
+    path {
+      fill: #ffffff;
+    }
+  }
+}
