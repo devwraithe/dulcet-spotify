@@ -1,0 +1,79 @@
+// mixins
+@mixin svgStyle {
+  .svg {
+    width: 20px;
+    height: 20px;
+
+    path {
+      fill: #afafaf;
+    }
+  }
+}
+
+@mixin svgActive {
+  .svg {
+    path {
+      fill: #ffffff;
+    }
+  }
+}
+
+// sidenav
+.sidenav {
+  width: 15%;
+  font-size: 13px;
+  max-width: 100%;
+  background-color: #000000;
+  color: #afafaf;
+
+  .nav {
+    @apply h-full;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .button {
+      background: linear-gradient(to bottom, #126631, #022e12);
+      border-radius: 5px;
+      padding-top: 10px;
+      padding-bottom: 9px;
+      color: #ffffff;
+    }
+
+    .item {
+      align-items: center;
+      @include svgStyle;
+    }
+
+    .active {
+      background-color: #ffffff1a;
+      color: #ffffff;
+      border-radius: 5px;
+      @include svgActive;
+    }
+
+    .bottom {
+      background: linear-gradient(to bottom right, #101010, #505050);
+      border-radius: 5px;
+      padding-top: 10px;
+      padding-bottom: 9px;
+      color: #ffffff;
+
+      .icon {
+        margin-left: -4px;
+        .svg {
+          width: 24px;
+          height: 24px;
+
+          path {
+            fill: #afafaf;
+          }
+        }
+      }
+
+      .title {
+        margin-top: 3px;
+      }
+    }
+  }
+}

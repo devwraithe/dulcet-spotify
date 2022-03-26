@@ -1,6 +1,6 @@
 // imports
-import SideNav from "../../components/sideNav/sideNav";
-import "./app.scss";
+import SideNav from "../../components/sideNav";
+import "./index.scss";
 import songCoverI from "../../assets/coverI.jpg";
 import songCoverII from "../../assets/cover.jpg";
 import Avatar from "../../components/avatar/avatar";

@@ -7,7 +7,7 @@ function Avatar() {
   return (
     <>
       {/* avatar */}
-      <div className="avatar mr-8">
+      <div className="avatar mr-2">
         <img src={avatar} alt="" class="image" />
       </div>
     </>

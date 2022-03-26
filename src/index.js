@@ -1,14 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./pages/app/app";
+import App from "./pages/app";
 import Loader from "./pages/loader";
 import Login from "./pages/login";
+import UserProfile from "./pages/userProfile";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Loader />
+    <UserProfile />
   </React.StrictMode>,
   document.getElementById("root")
 );

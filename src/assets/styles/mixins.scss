@@ -17,3 +17,18 @@
     }
   }
 }
+
+@mixin btn_solid {
+  .btn {
+    @apply mt-5;
+    border: 2px solid $primary;
+    background-color: $primary;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 12px 30px;
+    padding-top: 15px;
+    border-radius: 50px;
+    letter-spacing: 3px;
+    text-indent: 3px;
+  }
+}

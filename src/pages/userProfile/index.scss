@@ -1,0 +1,170 @@
+// imports
+@import "../../assets/styles/global.scss";
+
+.user_profile {
+  .wrapper {
+    .main {
+      width: 85%;
+      background-color: #101010;
+      // header
+      .header {
+        color: $light;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url(../../assets/cover.jpg) #000000 50% 50% no-repeat fixed;
+        background-size: cover;
+        position: relative;
+
+        .wrapper {
+          align-items: center;
+          background-color: rgba($color: #000000, $alpha: 0.5);
+          width: 100%;
+
+          .username {
+            font-size: 4rem;
+            font-weight: 900;
+          }
+          .digit {
+            color: $primary;
+            font-weight: 600;
+            font-size: 1.4rem;
+          }
+          .title {
+            color: $light;
+            font-weight: 400;
+            font-size: 0.8rem;
+            color: $gray;
+            letter-spacing: 3px;
+          }
+
+          .logout {
+            position: absolute;
+            top: 0;
+            right: 2em;
+            @apply mt-5;
+            border: 2px solid $light;
+            background-color: transparent;
+            color: $light;
+            font-size: 11px;
+            font-weight: 500;
+            padding: 10px 22px;
+            padding-top: 12.5px;
+            border-radius: 50px;
+            letter-spacing: 3px;
+            text-indent: 3px;
+          }
+        }
+      }
+
+      .main {
+        color: $light;
+        width: 100%;
+
+        .title {
+          font-size: 1.7rem;
+          font-weight: 900;
+          margin-bottom: -2px;
+        }
+
+        .subtitle {
+          font-size: 0.9rem;
+          color: $gray;
+          font-weight: 500;
+        }
+
+        .more {
+          color: $light;
+          font-weight: 600;
+          font-size: 0.8rem;
+          color: $gray;
+          letter-spacing: 1px;
+        }
+
+        .cards {
+          .card {
+            width: 15em;
+            background-color: #181818;
+
+            .title {
+              font-size: 1rem;
+              font-weight: 600;
+            }
+
+            .subtitle {
+              font-size: 0.85rem;
+              color: $gray;
+              font-weight: 500;
+              margin-top: 3px;
+            }
+
+            .src {
+              height: 13em;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+
+      //   .main {
+      //     // background-color: red;
+      //     width: 100%;
+      //     color: $light;
+      //     display: flex;
+      //     justify-content: space-between;
+
+      //     .sub_sections {
+      //       width: 45%;
+      //     }
+
+      //     .heading {
+      //       .title {
+      //         font-size: 1.5rem;
+      //         font-weight: 900;
+      //         margin-bottom: -8px;
+      //       }
+
+      //       .subtitle {
+      //         font-size: 0.9rem;
+      //         color: $gray;
+      //         font-weight: 500;
+      //       }
+
+      //       .more {
+      //         color: $light;
+      //         font-weight: 600;
+      //         font-size: 0.8rem;
+      //         color: $gray;
+      //         letter-spacing: 1px;
+      //       }
+      //     }
+      //     .items {
+      //       .image {
+      //         width: 3em;
+      //         height: 3em;
+
+      //         .src {
+      //           width: 100%;
+      //           height: 100%;
+      //           object-fit: cover;
+      //         }
+      //       }
+
+      //       .data {
+      //         .artiste {
+      //           font-size: 1.1rem;
+      //           font-weight: 600;
+      //           margin-bottom: -2px;
+      //         }
+
+      //         .listeners {
+      //           font-size: 0.9rem;
+      //           color: $gray;
+      //           font-weight: 500;
+      //         }
+      //       }
+      //     }
+      //   }
+    }
+  }
+}
