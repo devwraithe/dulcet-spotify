@@ -2,11 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./pages/app/app";
+import Loader from "./pages/loader";
+import Login from "./pages/login";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Loader />
   </React.StrictMode>,
   document.getElementById("root")
 );

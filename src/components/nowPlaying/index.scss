@@ -3,8 +3,11 @@
   background-color: #181818;
   width: 100vw;
   color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 
-  &__col {
+  &__column,
+  &__track {
     align-items: center;
   }
 
@@ -27,5 +30,9 @@
     font-size: 16px;
     font-weight: 500;
     margin: 1.5px 0;
+  }
+
+  &__volume {
+    font-size: 13px;
   }
 }
